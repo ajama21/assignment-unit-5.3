@@ -17,4 +17,15 @@ addToCollection('Computerwelt', 'Kraftwerk', 1981);
 addToCollection('Revolver', 'The Beatlers', 1966 );
 addToCollection('Because the Internet', 'Childish Gambino', 2013);
 addToCollection('Master of Puppets', 'Metallica', 1986);
+
 console.log(collection);
+
+
+function showCollection(array) {
+    console.log('Number of items in collection:', array.length);
+    for (const album of array) {
+        console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+    }
+}
+
+showCollection(collection);
