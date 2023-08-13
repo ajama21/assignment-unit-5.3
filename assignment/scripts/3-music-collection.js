@@ -29,3 +29,19 @@ function showCollection(array) {
 }
 
 showCollection(collection);
+
+function findByArtist(artist){
+    results =[];
+    for (let newAlbum of collection){
+        if (newAlbum.artist === artist) {
+            results.push(newAlbum);
+        }
+    }
+    return results;
+}
+
+console.log(findByArtist('Hiroshi Yoshimura'));
+console.log(findByArtist('Childish Gambino'));
+console.log(findByArtist('Metallica'));
+console.log(findByArtist('Kraftwerk'));
+console.log(findByArtist('Frank Ocean'));
